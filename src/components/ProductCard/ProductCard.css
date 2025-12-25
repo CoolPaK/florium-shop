@@ -1,0 +1,110 @@
+.product-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition-normal);
+  flex: 0 0 280px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.product-image {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-normal);
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition-normal);
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.add-to-cart-btn {
+  padding: var(--spacing-md) var(--spacing-lg);
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: var(--font-size-md);
+  transition: var(--transition-normal);
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.product-card:hover .add-to-cart-btn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #d81b60;
+  transform: translateY(-2px) !important;
+}
+
+.add-to-cart-btn.added {
+  background-color: var(--secondary-color);
+}
+
+.product-content {
+  padding: var(--spacing-lg);
+  text-align: center;
+}
+
+.product-content h3 {
+  margin-bottom: var(--spacing-sm);
+  color: var(--dark-color);
+  font-size: var(--font-size-lg);
+}
+
+.product-description {
+  color: var(--gray-color);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-md);
+  min-height: 40px;
+}
+
+.product-price {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    flex: 0 0 250px;
+  }
+  
+  .product-image {
+    height: 200px;
+  }
+}

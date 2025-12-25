@@ -1,0 +1,59 @@
+.bestsellers {
+  background-color: var(--light-gray);
+}
+
+.products-carousel {
+  display: flex;
+  gap: var(--spacing-xl);
+  overflow-x: auto;
+  padding: var(--spacing-md) var(--spacing-sm);
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) var(--light-gray);
+  scroll-behavior: smooth;
+}
+
+.products-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.products-carousel::-webkit-scrollbar-track {
+  background: var(--light-gray);
+  border-radius: 10px;
+}
+
+.products-carousel::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.carousel-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: var(--font-size-lg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-normal);
+}
+
+.carousel-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.carousel-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

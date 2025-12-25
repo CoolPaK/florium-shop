@@ -1,0 +1,39 @@
+:root {
+  /* Цвета */
+  --primary-color: #e91e63;
+  --primary-light: #f8bbd0;
+  --secondary-color: #4caf50;
+  --light-color: #f9f9f9;
+  --dark-color: #333;
+  --gray-color: #777;
+  --light-gray: #f5f5f5;
+  
+  /* Тени */
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+  
+  /* Скругления */
+  --border-radius: 8px;
+  --border-radius-sm: 4px;
+  
+  /* Отступы */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  
+  /* Переходы */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  /* Шрифты */
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2rem;
+}
