@@ -26,5 +26,5 @@ npm init -y
 npm install react react-dom react-icons
 npm install --save-dev vite @vitejs/plugin-react
 
-
-## [Pages](https://coolpak.github.io/florium-shop/)
+##
+[Pages](https://coolpak.github.io/florium-shop/)
